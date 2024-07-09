@@ -1,38 +1,256 @@
-.App {
-  text-align: center;
+.menu {
+  background-color: #4F372F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menuItem {
+  color: #fff;
+  padding: 10px;
+  margin: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.imageTopo {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px 0;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: #EEEEEE;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.searchIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  color: #000;
+}
+
+.storeAndCart {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.storeItems {
+  width: 70%;
+}
+
+.cart {
+  width: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.cartItems {
+  margin-bottom: 20px;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cartItem p {
+  margin: 0;
+}
+
+.cartTotal {
+  font-weight: bold;
+}
+
+.totals {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.horizontalTopics {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.topicItem {
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.topicImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.topicName {
+  margin-top: 5px;
+}
+
+.itemList {
+  margin-top: 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.itemDetails {
+  flex: 1;
+}
+
+.itemName {
+  margin: 5px 0;
+}
+
+.itemDescription {
+  color: #777;
+}
+
+.itemPrice {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.itemImage {
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.modalBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  outline: none;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.closeButton {
+  background-color: #ffff !important;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.modalImage {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 10px;
+}
+
+.quantityControl button {
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.quantityControl span {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.buttonSubimit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.addOrderButton {
+  background-color: #4F372F;
+  border: none;
   color: white;
+  padding: 10px 15px;
+  text-align: center;
+  justify-content: center; 
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 80%;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.removeCartItemButton {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cartItemDetails {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.quantityButtonMore {
+  background-color: #4F372F !important;
+  border-radius: 15px;
+  margin: 10px;
+  color: #fff;
+}
+
+
+.quantityButtonLater {
+  border-radius: 15px;
 }
